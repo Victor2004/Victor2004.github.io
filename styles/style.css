@@ -1,0 +1,157 @@
+.background {
+    background-color: #007ced;
+    background-image: url('../images/main_bg.png');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
+.header,
+.main-container,
+.site-footer {
+    background-color: #222222;
+    color: white;
+    /* max-width: 1280px; */
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    max-height: 750px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-block-start: 0.5%;
+    height: 65vh;
+    box-sizing: content-box;
+}
+
+.header {
+    margin-block-start: 4%;
+    height: 7vh;
+    max-width: 91%;
+    width: 1320px;
+}
+
+.site-footer {
+    /* background-color: #252525;*/
+    height: 7vh;
+}
+
+.main-photo {
+    width: 260px;
+    height: 260px;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+}
+
+.logo-symbol {
+    float: left;
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background-color: #007ced;
+    border-radius: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-right: 8px;
+    margin-top: 11px;
+}
+
+.logo-text {
+    float: left;
+    line-height: 68px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+p {
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 0;
+    font-style: normal;
+    line-height: 1.75em;
+    color: #d5d5d5;
+}
+
+a {
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 0;
+    font-style: normal;
+    color: #f5f5f5;
+    letter-spacing: 0px;
+}
+
+.box {
+    animation: 0.5s show ease;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 1021px) {
+    .background {
+        background-size: 190% auto;
+    }
+
+    .main-container {
+        max-width: 91%;
+        /* margin-block-start: 9%; */
+        height: 66vh;
+    }
+
+    .main-photo {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .background {
+        /* background-color: #222222; */
+        background-image: none;
+    }
+
+    .header,
+    .main-container,
+    .site-footer {
+        margin-block-start: 4%;
+        /* border-radius: 0; */
+    }
+
+    .main-photo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .logo-text {
+        display: inline-block;
+        line-height: 62px;
+        font-size: 18px;
+        display: none;
+    }
+
+    /* .logo-symbol {
+        width: 32px;
+        height: 32px;
+        line-height: 30px;
+        font-size: 18px;
+        margin-top: 14px;
+    } */
+
+    .site-footer {
+        /* background-color: #252525;*/
+        background-color: #222222;
+    }
+}
