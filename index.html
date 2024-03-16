@@ -10,67 +10,68 @@
     <meta property="og:image" content="https://example.com/image.jpg">
     <meta property="og:url" content="https://example.com/">
 
-    <link rel="stylesheet" href="styles/style.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="scripts/main.js"></script>
 </head>
 
-<body class="background">
+<body class="background" onload="getRandomGif()">
 
     <header class="site-header p-0 box">
-        <div class="row">
-            <div class="col">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
                 <a title="Главная страница" href="/">
                     <div class="logo-symbol">В</div>
                     <div class="logo-text">Пыжов Виктор</div>
                 </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Главная страница</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="/about-me">Обо мне</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="/resume">Резюме</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="/portfolio">Портфолио</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="/contact">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-9">
-                <nav class="navbar navbar-expand-lg navbar-dark" style="float: right;">
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="/">Главная страница</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="/about-me">Обо мне</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="/resume">Резюме</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="/portfolio">Портфолио</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="/contact">Контакты</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
+        </nav>
+
     </header>
 
     <div class="main-container p-3 mb-2 box" <div class="container">
         <div class="row position-absolute top-50 start-50 translate-middle">
             <div class="col">
                 <h1>Пыжов Виктор</h1>
-                <p>Здесь должен быть краткий<br />текст о себе</p>
+                <p>Начиная с 13 лет, я увлекаюсь программированием и принимал участие во множестве конкурсов по
+                    программированию и робототехнике, где часто занимал призовые места. В настоящее время я учусь на
+                    втором курсе факультета техники, управления и цифровой инфраструктуры, активно практикуюсь в backend
+                    разработке и параллельно изучаю frontend. Моя цель - получить стажировку/работу по специальности,
+                    готов учиться и стремлюсь получить больше практического опыта.</p>
             </div>
             <div class="col-md-auto">
-                <div class="main-photo">
-                    <img src="https://i.giphy.com/E8BKRmebpiire.webp" alt="Где картинка?" class="img-fluid">
-                </div>
+                <div class="main-photo"></div>
             </div>
         </div>
     </div>
     </div>
 
-    <footer class="container p-0 box site-footer">
+    <footer class="site-footer container p-0 box">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNav">

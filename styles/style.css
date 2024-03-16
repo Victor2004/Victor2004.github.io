@@ -10,7 +10,6 @@
 .site-footer {
     background-color: #222222;
     color: white;
-    /* max-width: 1280px; */
     width: 1280px;
     margin-left: auto;
     margin-right: auto;
@@ -31,7 +30,6 @@
 }
 
 .site-footer {
-    /* background-color: #252525;*/
     height: 67px;
 }
 
@@ -44,20 +42,22 @@
     color: black;
 }
 
+
+
 .logo-symbol {
     float: left;
     width: 44px;
     height: 44px;
-    line-height: 43px;
+    /* line-height: 43px; */
     background-color: #007ced;
     border-radius: 100px;
     text-align: center;
     color: #fff;
     font-size: 28px;
     font-weight: 800;
-    margin-left: 10px;
+    margin-left: -2px;
     margin-right: 8px;
-    margin-top: 11px;
+    margin-top: 2px;
 }
 
 .logo-text {
@@ -66,6 +66,7 @@
     font-size: 20px;
     color: #fff;
     font-weight: 600;
+    margin-top: -8px;
 }
 
 p {
@@ -101,17 +102,8 @@ a {
 }
 
 @media screen and (max-width: 1450px) {
-    /* .background {
-        background-size: 190% auto;
-    } */
-
-    /* .container {
-        max-width: 91%;
-    } */
-
     .main-container {
         max-width: 91%;
-        /* margin-block-start: 9%; */
         height: 66vh;
     }
 
@@ -121,17 +113,16 @@ a {
     }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 991.98px) {
     .background {
-        /* background-color: #222222; */
         background-image: none;
+        background-color: #222222;
     }
 
     .site-header,
     .main-container,
     .site-footer {
-        margin-block-start: 4%;
-        /* border-radius: 0; */
+        margin-block-start: 1%;
     }
 
     .main-photo {
@@ -139,23 +130,16 @@ a {
         height: 130px;
     }
 
+    .logo-symbol {
+        margin-top: -2px;
+    }
+
+
     .logo-text {
-        display: inline-block;
-        line-height: 62px;
-        font-size: 18px;
         display: none;
     }
 
-    /* .logo-symbol {
-        width: 32px;
-        height: 32px;
-        line-height: 30px;
-        font-size: 18px;
-        margin-top: 14px;
-    } */
-
     .site-footer {
-        /* background-color: #252525;*/
-        background-color: #222222;
+        display: none;
     }
 }
