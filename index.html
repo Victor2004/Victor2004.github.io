@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пыжов Виктор</title>
-    <meta property="og:title" content="Заголовок страницы в OG">
-    <meta property="og:description" content="Описание страницы в OG">
-    <meta property="og:image" content="https://example.com/image.jpg">
-    <meta property="og:url" content="https://example.com/">
+    <meta property="og:title" content="Резюме Пыжова Виктора">
+    <meta property="og:description" content="Страница обо мне">
+    <!-- <meta property="og:image" content="https://example.com/image.jpg"> -->
+    <meta property="og:url" content="https://victor2004.github.io/">
 
 
     <!-- Bootstrap CSS -->
@@ -27,11 +27,11 @@
     <script src="scripts/main.js"></script>
 </head>
 
-<body class="background" onload="getRandomGif()">
+<body class="background">
 
     <header class="site-header p-0 box">
 
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav id="headerNavbar" class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a title="Главная страница" href="/">
                     <div class="logo-symbol">В</div>
@@ -55,6 +55,10 @@
                             <a class="nav-link disabled" href="contact.html">Контакты</a>
                         </li>
                     </ul>
+                    <!-- ☀️🌙 -->
+                    <button id="toggleBtn" onclick="prefersColorScheme(true)">
+                        <div id="toggleBtnIcon" class="toggle-button-icon">ඞ</div>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -65,7 +69,7 @@
         <div class="row position-absolute top-50 start-50 translate-middle">
             <div class="col">
                 <h1>Пыжов Виктор</h1>
-                <p>Начиная с 13 лет, я увлекаюсь программированием и принимал участие во множестве конкурсов по
+                <p id="homeText">Начиная с 13 лет, я увлекаюсь программированием и принимал участие во множестве конкурсов по
                     программированию и робототехнике, где часто занимал призовые места. В настоящее время я учусь на
                     втором курсе факультета техники, управления и цифровой инфраструктуры, активно практикуюсь в backend
                     разработке и параллельно изучаю frontend. Моя цель - получить стажировку/работу по специальности,
@@ -79,7 +83,7 @@
     </div>
 
     <footer class="site-footer container p-0 box">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav id="footerNavbar" class="navbar navbar-expand-lg navbar-dark" style="border-radius: 40px;">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
