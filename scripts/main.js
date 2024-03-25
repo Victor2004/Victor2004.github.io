@@ -11,8 +11,17 @@ function getRandomGif() {
     document.querySelector('.main-photo').appendChild(imgElement);
 }
 
+// localStorage.setItem('darkTheme', true);
+// let darkTheme = localStorage.getItem('darkTheme');
+// console.log(darkTheme, localStorage.getItem('darkTheme'));
 
 function prefersColorScheme(toggle = false) {
+    let darkTheme = localStorage.getItem('darkTheme') === 'true';
+    if (toggle) {
+        darkTheme = !darkTheme;
+        localStorage.setItem('darkTheme', darkTheme);
+    }
+    
     const navbar = document.getElementById('headerNavbar');
     const header = document.querySelector('.site-header');
     const logoText = document.querySelector('.logo-text');
@@ -22,7 +31,7 @@ function prefersColorScheme(toggle = false) {
 
     const BtnIcon = document.getElementById('toggleBtnIcon');
 
-    if (toggle && navbar.classList.contains('navbar-dark')) {
+    if (!darkTheme) {
         navbar.classList.remove('navbar-dark');
         header.classList.remove('theme-dark');
         container.classList.remove('theme-dark');
@@ -45,11 +54,11 @@ function prefersColorScheme(toggle = false) {
         container.classList.remove('theme-light');
         footer.classList.remove('navbar-light');
         footer.classList.remove('theme-light');
+
         homeText.style = 'color: #d5d5d5;';
         navbar.classList.add('navbar-dark');
         header.classList.add('theme-dark');
         logoText.style = 'color: #fff;';
-
         container.classList.add('theme-dark');
         footer.classList.add('navbar-dark');
         footer.classList.add('theme-dark');
