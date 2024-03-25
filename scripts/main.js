@@ -11,6 +11,14 @@ function getRandomGif() {
     document.querySelector('.main-photo').appendChild(imgElement);
 }
 
+if (localStorage.getItem('darkTheme') === null) {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        localStorage.setItem('darkTheme', false);
+    } else {
+        localStorage.setItem('darkTheme', true);
+    }
+}
+
 function prefersColorScheme(toggle = false) {
     let darkTheme = localStorage.getItem('darkTheme') === 'true';
     if (toggle) {
@@ -27,7 +35,7 @@ function prefersColorScheme(toggle = false) {
 
     const BtnIcon = document.getElementById('toggleBtnIcon');
 
-    if (!darkTheme) {
+    if (darkTheme) {
         navbar.classList.remove('navbar-dark');
         header.classList.remove('theme-dark');
         container.classList.remove('theme-dark');
