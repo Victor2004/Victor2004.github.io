@@ -11,17 +11,13 @@ function getRandomGif() {
     document.querySelector('.main-photo').appendChild(imgElement);
 }
 
-// localStorage.setItem('darkTheme', true);
-// let darkTheme = localStorage.getItem('darkTheme');
-// console.log(darkTheme, localStorage.getItem('darkTheme'));
-
 function prefersColorScheme(toggle = false) {
     let darkTheme = localStorage.getItem('darkTheme') === 'true';
     if (toggle) {
         darkTheme = !darkTheme;
         localStorage.setItem('darkTheme', darkTheme);
     }
-    
+
     const navbar = document.getElementById('headerNavbar');
     const header = document.querySelector('.site-header');
     const logoText = document.querySelector('.logo-text');
