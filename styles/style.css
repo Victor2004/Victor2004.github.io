@@ -30,6 +30,10 @@
     box-sizing: content-box;
 }
 
+.main-container {
+    height: auto;
+}
+
 .site-header {
     margin-block-start: 4%;
     height: 67px;
@@ -57,7 +61,6 @@
     float: left;
     width: 44px;
     height: 44px;
-    /* line-height: 43px; */
     background-color: #007ced;
     border-radius: 100px;
     text-align: center;
@@ -130,7 +133,6 @@ button {
 @media screen and (max-width: 1450px) {
     .main-container {
         max-width: 91%;
-        height: 66vh;
     }
 
     .main-photo {
@@ -142,7 +144,6 @@ button {
 @media screen and (max-width: 991.98px) {
     .background {
         background-image: none;
-        /* background-color: #222222; */
     }
 
     .site-header,
@@ -165,7 +166,19 @@ button {
         display: none;
     }
 
+    .main-container {
+        height: auto;
+    }
+
     .site-footer {
         display: none;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
     }
 }
