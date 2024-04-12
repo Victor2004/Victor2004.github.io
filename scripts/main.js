@@ -72,7 +72,7 @@ function prefersColorScheme(toggle = false) {
     }
 }
 
-window.onload = function () {
-    getRandomGif();
-    prefersColorScheme();
-};
+// window.onload = function () {
+//     prefersColorScheme();
+//     getRandomGif();
+// };
