@@ -82,6 +82,7 @@
 }
 
 .logo-text {
+    font-family: Helvetica, sans-serif;
     float: left;
     line-height: 68px;
     font-size: 20px;
@@ -90,8 +91,12 @@
     margin-top: -8px;
 }
 
+h1{
+    font-family: Helvetica, sans-serif;
+}
+
 p {
-    font-family: "Poppins", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 0;
     font-style: normal;
