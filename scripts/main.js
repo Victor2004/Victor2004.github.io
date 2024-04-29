@@ -72,7 +72,15 @@ function prefersColorScheme(toggle = false) {
     }
 }
 
-// window.onload = function () {
-//     prefersColorScheme();
-//     getRandomGif();
-// };
+function navbarTogglerHeader() {
+    const header = document.querySelector('.site-header');
+    if (window.getComputedStyle(header).getPropertyValue('height') === '67px') {
+        header.style = 'height: 320px; border-radius: 34px;';
+    } else {
+        header.style = 'height: 67px; border-radius: 40px;';
+    }
+}
+
+window.onload = function () {
+    prefersColorScheme();
+};
