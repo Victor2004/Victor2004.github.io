@@ -1,3 +1,10 @@
+body {
+    background-color: #007ced;
+    background-image: url('../images/main_bg.png');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
 .theme-dark {
     background-color: #222222;
     color: white;
@@ -6,13 +13,6 @@
 .theme-light {
     background-color: rgba(255, 255, 255, 1);
     color: #333333;
-}
-
-.background {
-    background-color: #007ced;
-    background-image: url('../images/main_bg.png');
-    background-size: 100% 100vh;
-    background-repeat: no-repeat;
 }
 
 .site-header,
